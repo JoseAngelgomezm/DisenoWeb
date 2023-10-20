@@ -8,44 +8,41 @@
 </head>
 
 <body>
-    <h2>Iniciar sesión</h2>
-    <form action="ejercicio4.html" method="post">
-
-        <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email" name="email" aria-label="Email" id="email" title="introduce un email válido" required autofocus>
-        <input type="password" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$" placeholder="Contraseña" name="contrasena" id="contrasena" title="Introduce una contraseña" required>
-        <a href="#">Recuperar contraseña</a>
-        <button type="submit" name="inicarSesion" id="inicarSesion">Inicar sesión</button>
-
-    </form>
-
+    <section>
+        <h2>Iniciar sesión</h2>
+        <form action="ejercicio4.html" method="post">
+            <input type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email" name="email"
+                aria-label="Email" id="email" title="introduce un email válido"  autofocus>
+            <input type="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$" placeholder="Contraseña"
+                name="contrasena" id="contrasena" title="Introduce una contraseña" >
+            <a href="#">Recuperar contraseña</a>
+            <button type="submit" name="inicarSesion" id="inicarSesion">Inicar sesión</button>
+        </form>
+    </section>
 
 </body>
 
 <style>
-    #email:invalid{
-        color:red;
+    #email:invalid {
+        color: red;
         border-color: red;
     }
-    #email:valid{
-        color:green;
-        border-color:green;
-    }
-    #contraseña:invalid{
-        background-color: red;
-        border-color: red;
+
+    #email:valid {
+        color: green;
+        border-color: green;
     }
     a {
-        color:black;
-        text-decoration:none;
+        color: black;
+        text-decoration: none;
     }
+
     button {
         padding: 1em;
         border-radius: 2em;
         background-color: black;
-        color:bisque;
+        color: bisque;
     }
-
-
 </style>
 
 </html>
