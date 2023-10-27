@@ -1,0 +1,99 @@
+* {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: black;
+    background-color: white;
+}
+
+header, footer{
+    background-color: #e6e7e8;
+    border: solid 2px  #3f3f3f;
+    border-radius: 5px;
+}
+
+footer{
+    color: #3f3f3f;
+    height: 2rem;
+}
+
+header #logo{
+    width: 5rem;
+    height: 4.35rem;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Bree Serif';
+    color:#00acdd;
+}
+
+header h1{
+    color:#004166;
+    font-weight: bold;
+}
+
+header h1 #subject {
+    color: #96bc33;
+} 
+
+a{
+    text-decoration: none;
+}
+
+a:link{
+    color: #00acdd;
+}
+
+a:visited{
+    color:#ea2126;
+}
+
+a:hover{
+    cursor: pointer;
+    color:#f58a1e;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav{
+    background-color:#004166;
+    font-weight: bold;
+    border: solid 2px #e6e7e8;
+    border-radius: 5px;
+}
+
+main{
+    border: solid 2px #004166;
+    border-radius: 5px;
+}
+
+main section h2{
+   text-align: center;
+}
+
+main section .new-arts{
+    position:relative;
+    border:solid 5px  #e6e7e8;
+    border-radius: 10px;
+    width: 50%;
+}
+
+main section article img{
+    position:relative;
+    width: 30%;
+    height: auto;
+}
+
+main section article p{
+    position:relative;
+    width: 70%;
+    height: auto;
+    text-align: justify;
+}
+
+#destacada{
+    border:solid 2px #f58a1e;
+    background-color:#e6e7e8 ;
+    
+}
