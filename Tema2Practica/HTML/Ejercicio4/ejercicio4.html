@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <h2>Iniciar sesión</h2>
+        <form action="ejercicio4.html" method="post">
+            <input type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email" name="email"
+                aria-label="Email" id="email" title="introduce un email válido"  autofocus>
+            <input type="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$" placeholder="Contraseña"
+                name="contrasena" id="contrasena" title="Introduce una contraseña" >
+            <a href="#">Recuperar contraseña</a>
+            <button type="submit" name="inicarSesion" id="inicarSesion">Inicar sesión</button>
+        </form>
+    </section>
+
+</body>
+</html>

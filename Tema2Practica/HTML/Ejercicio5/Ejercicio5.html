@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="Ejercicio5.html" method="post">
+        <input type="radio" id="sr" autofocus name="sexo" value="sr">
+        <label for="sr">Sr.</label>
+        <input type="radio" id="sra" name="sexo" value="sra">
+        <label for="sra">Sra.</label>
+        <input type="text" placeholder="Nombre / Razon Social" aria-label="nombre" id="nombre" title="Indica tu Nombre / Razón Social">
+        <input type="text" required placeholder="Apellidos*" aria-label="apellidos" id="apellidos" title="Indica tu Apellido">
+        <input type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" aria-label="email" placeholder="Email*" id="email" title="Indica tu email">
+        <input type="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$" aria-label="contraseña" placeholder="Contraseña*" id="contrasena" title="Introduce una contraseña">
+        <h3>FECHA DE NACIMIENTO</h3>
+        <input type="date" name="fecha" id="fecha" min="1950-01-01" max="2023-01-01" aria-label="fecha nacimiento">
+        <input type="text" name="dni" pattern="^[XYZ0-9][0-9]{7}[A-Za-z]$" aria-label="dni" required placeholder="DNI/NIF/NIE*" title="Indica tu DNI">
+        <input type="text" name="direccion" id="direccion" required placeholder="Direccion*" aria-label="direccion" title="Introduce tu direccion">
+        <input type="text" name="codigop" id="codigop" pattern="[0-9]{5}" aria-label="codigo postal" required placeholder="Codigo Postal*" title="Indica tu CP">
+        <input type="text" name="ciudad" id="ciudad" required placeholder="Ciudad*" aria-label="ciudad" title="Indica tu Ciudad">
+        <select name="pais" title="Indica tu provincia" id="pais" aria-label="país">
+            <option>España</option>
+        </select>
+        <select name="provincia" id="provincia" title="provincia" aria-label="provincia">
+            <option>Provincia</option>
+        </select>
+        <textarea placeholder="Información adicional" title="Aporta informacion adicional si lo crees necesario" aria-label="información adicional"></textarea>
+        <input type="tel" name="telefono" id="telefono" required pattern="[6-9][0-9]{8}" placeholder="Teléfono móvil*" aria-label="teléfono" title="Indica tu teléfono móvil">
+        <input type="checkbox" name="autorizar" id="autorizar">
+        <label for="autorizar">Estos datos personales se utilizarán para responder a sus búsquedas, procesar sus pedidos
+            o autorizar acceso</label>
+        <button type="submit" name="registrarse" id="registrarse">Registrarse</button>
+    </form>
+</body>
+
+</html>
