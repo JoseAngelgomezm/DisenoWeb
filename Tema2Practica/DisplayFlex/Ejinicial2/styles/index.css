@@ -55,7 +55,7 @@ ul{
 }
 
 /* media querys escritorio */
-@media (min-width:1920px){
+@media (min-width:1620px){
     ul.menu{
         background-color: #0ccef0;
         justify-content: flex-end;
