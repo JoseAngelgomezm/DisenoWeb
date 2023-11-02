@@ -1,0 +1,43 @@
+body{
+    font-family: 'Roboto','San Serif';
+    font-weight: bold;
+}
+
+form *{
+    margin: 10px;
+    border: none;
+    height: 25px;
+}
+
+form *::placeholder{
+    color : black;
+    font-weight: bold;
+}
+
+form input{
+    border-bottom: solid 1px gray;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+form #sr,#sra{
+    flex-direction: row;
+}
+
+form button{
+    width: 200px;
+    height: 65px;
+    border-radius: 30px;
+    background-color: black;
+    color: rgb(165, 126, 42);
+    font-weight: bold;
+}
+
+form textarea{
+    resize: none;
+}
+

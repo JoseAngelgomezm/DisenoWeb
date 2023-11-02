@@ -20,13 +20,14 @@ form input, button, a {
 
 
 form input{
-    width: 150%;
+    width: 100%;
     border: none;
     border-bottom: 1px solid gray;
 }
 
 section form button{
-    color : rgb(226, 175, 7);
-    border-radius: 18px;
-    background-color: black;
+    color : rgb(141, 114, 25);
+    border-radius: 30px;
+    background-color: rgb(44, 42, 42);
+    width: 200px;
 }
