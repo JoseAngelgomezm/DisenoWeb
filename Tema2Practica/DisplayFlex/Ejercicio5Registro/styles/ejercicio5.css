@@ -5,30 +5,30 @@ body{
     font-weight: bold;
 }
 
-form *{
+form#form-login *{
     border: none;
 }
 
-form *::placeholder, select{
+form#form-login *::placeholder, select{
     color : black;
     font-weight: bold;
 }
 
-form input{
+form#form-login input{
     border-bottom: solid 1px gray;
 }
 
-form{
+form#form-login{
     display: flex;
     flex-flow: column;
-    row-gap: 20px;
 }
 
-form input, label, select{
-    height: 50px;
+form#form-login>*{
+    margin-top: 20px;
+    height: 30px;
 }
 
-form button{
+form#form-login button{
     width: 200px;
     height: 65px;
     border-radius: 30px;
@@ -37,8 +37,14 @@ form button{
     font-weight: bold;
 }
 
-form textarea{
-    resize: none;
-    border-bottom: 1px gray;
+
+@media(min-width:720px){
+    form#form-login{
+        align-items: center;
+    }
+
+    form#form-login>*{
+        width: 720px;
+    }
 }
 

@@ -10,26 +10,44 @@ a{
  color:black;
 }
 
-form{
+section form#form-login{
     display: flex;
     flex-direction: column;
 }
 
-form input, button, a {
-    margin-top: 1em;
-    height: 3rem;
-}
-
-
-form input{
-    width: 100%;
+section form#form-login input{
     border: none;
     border-bottom: 1px solid gray;
 }
 
-section form button{
-    color : rgb(141, 114, 25);
+section form#form-login input::placeholder{
+    color:black;
+}
+
+section form#form-login *{
+    margin: 10px;
+    height: 30px;
+}
+
+section form#form-login button{
+    color : rgb(233, 193, 147);
     border-radius: 30px;
     background-color: rgb(44, 42, 42);
     width: 200px;
+    height: 50px;
+}
+
+section h2{
+    text-align: center;
+}
+
+@media(min-width:720px){
+    
+    form#form-login{
+        align-items: center;
+    }
+
+    section form#form-login input{
+        width: 720px;
+    }
 }
