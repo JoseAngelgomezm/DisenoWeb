@@ -23,7 +23,7 @@ form{
 }
 
 form input, label, select{
-    height: 25px;
+    height: 30px;
 }
 
 form button{
