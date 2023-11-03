@@ -1,76 +1,62 @@
-*{
+* {
     box-sizing: border-box;
 }
 
 /* estilos del body */
-body{
+body {
     background-color: #ffffff;
     font-family: Arial, sans-serif;
+    color: black;
 }
 
 /* estilos genericos */
-a{
+ul li a {
     text-decoration: none;
-    color:#FFF;
+    color: #FFF;
     font-size: 1.25rem;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
     color: black;
     font-size: 1.25rem;
 }
 
-ul{
+ul {
+    background-color: #0ccef0;
     padding: 0;
     list-style-type: none;
-}
-
-/* media querys movil */
-@media (min-width:480px){
-    ul.menu{
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    ul.menu li{
-        background-color: #0ccef0;
-        margin: 0.1rem;
-        text-align: center;
-    }
-}
-
-/* media querys tablet */
-@media (min-width:1024px){
-    ul.menu{
-        background-color: #0ccef0;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    ul.menu li{
-        margin: 0.1rem;
-        text-align: center;
-    }
-}
-
-/* media querys escritorio */
-@media (min-width:1620px){
-    ul.menu{
-        background-color: #0ccef0;
-        justify-content: flex-end;
-    }
-
-    ul.menu li{
-        margin: 0.1rem;
-    }
-}
-
-ul.menu{
+    flex-direction: column;
     border: 1px solid #FFF;
     display: flex;
 }
 
-ul.menu>li{
-    padding:0.62rem;
+ul li {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid white;
+}
+
+
+/* media querys tablet */
+@media (min-width:720px) {
+    ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    ul li {
+        border: none;
+    }
+}
+
+/* media querys escritorio */
+@media (min-width:1024px) {
+    ul.menu {
+        justify-content: flex-end;
+    }
+
+    ul li {
+        margin: 0.1rem;
+    }
 }
