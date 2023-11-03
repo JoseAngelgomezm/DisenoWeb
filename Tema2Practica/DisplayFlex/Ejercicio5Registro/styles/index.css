@@ -6,7 +6,6 @@ body{
 form *{
     margin: 10px;
     border: none;
-    height: 25px;
 }
 
 form *::placeholder{
@@ -20,12 +19,12 @@ form input{
 
 form{
     display: flex;
-    flex-direction: column;
-    width: 50%;
+    flex-flow: column;
+    width: 100%;
 }
 
-form #sr,#sra{
-    flex-direction: row;
+form input, label, select{
+    height: 25px;
 }
 
 form button{
