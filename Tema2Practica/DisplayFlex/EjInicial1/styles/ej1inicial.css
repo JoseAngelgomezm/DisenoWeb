@@ -32,10 +32,10 @@ ul.menu{
     height: 50vh;
     /* para alinear en el eje vertical al flex-start, flex-end o center, stretch, baseline */
     align-items: stretch;
-     /* para alinear cuando esta en wrap en el eje vertical al flex-start,space-between, space-around, stretch */
-    align-content: center;
+    /* para alinear cuando esta en wrap en el eje vertical al flex-start,space-between, space-around, stretch */
+    /*align-content: center;*/
     background-color: #ACACAC;
-    border: 1px solid #FFF
+    border: 1px solid #FFF;
 }
 
 ul.menu>li{
@@ -43,4 +43,9 @@ ul.menu>li{
     margin:0.62rem;
     border:1px solid #FFF;
     padding:0.62rem;
+}
+
+ul.menu>li:nth-child(1){
+    background-color:red;
+    align-self: flex-end;
 }
