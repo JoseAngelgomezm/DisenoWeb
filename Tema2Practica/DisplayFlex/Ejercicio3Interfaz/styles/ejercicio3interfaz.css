@@ -52,20 +52,19 @@ div footer {
 @media(min-width:768px){
     div main{
         flex-direction: row;
-        width: 100%;
         justify-content: center;
     }
     div main aside{
         height: 50vh;
-        width:20%;
+        flex-grow: 1;
     }
     div main nav{
         height: 50vh;
-        width:20%;
+        flex-grow: 1;
     }
     div main article{
         height: 50vh;
-        width:60%;
         margin: 0 5px;
+        flex-grow: 3;
     }
 }
