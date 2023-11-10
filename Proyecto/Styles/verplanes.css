@@ -1,0 +1,53 @@
+*{box-sizing: border-box;}
+
+header{
+    background-color: black;
+}
+
+main>h2{
+    background-color: gray;
+    text-align: center;
+    border-bottom: solid 1px black;
+}
+
+main section{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+main section ul{
+    color:white;
+}
+
+main section h2{
+    color:red
+}
+
+a{
+    text-decoration: none;
+    background-color: black;
+    padding:0.5em;
+    color:white;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer span{
+    margin: 5px 0;
+    color:white;
+}
+
+footer a{
+    margin: 5px 0;
+    text-decoration: none;
+    color: white;
+    text-decoration:underline;
+}

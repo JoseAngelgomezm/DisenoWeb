@@ -1,0 +1,28 @@
+*{box-sizing: border-box;}
+
+header{
+    background-color: black;
+}
+
+
+
+
+
+footer{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer span{
+    margin: 5px 0;
+    color:white;
+}
+
+footer a{
+    margin: 5px 0;
+    text-decoration: none;
+    color: white;
+    text-decoration:underline;
+}
