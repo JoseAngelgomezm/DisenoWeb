@@ -78,7 +78,7 @@ nav#main-menu{
   border-radius: 5px;
 }
 
-nav#main-menu > input:checked{
+nav#main-menu > input:checked ~ ul, input{
   display: none;
 }
 
@@ -133,9 +133,7 @@ div#content main section article.news-art p{
     flex: 100%;
   }
 
-  div#content main section#principal article#primerElemento > img ,  div#content main section#principal article#primerElemento > p{
-    flex: 50%;
-  }
+  div#content main section 
 
   main section article.news-art{
     flex-direction: row;
