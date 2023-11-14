@@ -147,6 +147,10 @@ div#content main section article.news-art p{
     flex: 50%;
   }
 
+  main section article.news-art > img{
+    flex:0 20%;
+  }
+
   @media(min-width:1200px){
     main section#principal{
       flex-direction: row;
@@ -159,6 +163,10 @@ div#content main section article.news-art p{
 
     main section article.news-art{
       flex:50%;
+    }
+
+    main section article.news-art > img{
+      flex:0 20%;
     }
   }
 
