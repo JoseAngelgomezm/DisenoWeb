@@ -168,7 +168,12 @@ div#content main section article.news-art p{
     main section article.news-art > img{
       flex:0 20%;
     }
-  }
 
-  
+    nav#main-menu > ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+    }
+  }
 }
