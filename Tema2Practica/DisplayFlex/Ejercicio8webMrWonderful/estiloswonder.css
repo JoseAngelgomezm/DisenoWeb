@@ -4,9 +4,7 @@
 
 /*Comenzamos con la versión móvil*/
 
-/*Hacemos el cuerpo de la web flexible*/
 body {
-
 	font-size: 16px;
 	color: grey;
 }
@@ -65,24 +63,24 @@ header>nav#menu-principal>ul#menu {
 
 /*En segunda posición está el buscador*/
 header>nav#search {
-	order:2;
+	order: 2;
 	font-size: 1.4rem;
 }
 
 /*En tercera posición se encuentra el logo*/
 header>a#logo {
-	order:3;
+	order: 3;
 	font-size: 1.4rem;
 }
 
 /*El logo de la cabecera tiene un tamaño fijo*/
-header a#logo picture img#wonder{
-	size:200px;
+header a#logo picture img#wonder {
+	size: 200px;
 }
 
 /*En cuarta posición está el icono del usuario de login*/
 header>nav#login {
-	order:4;
+	order: 4;
 	font-size: 1.4rem;
 }
 
@@ -97,8 +95,8 @@ header>nav#bag {
 main {
 	display: flex;
 	flex-direction: row;
-	flex-wrap:wrap;
-	
+	flex-wrap: wrap;
+
 }
 
 /*Los artículos tienen que ser flexibles*/
@@ -107,6 +105,7 @@ main article {
 	flex-direction: column;
 	align-items: center;
 }
+
 /*En la versión de móvil se muestran en filas de 2*/
 
 main>article.item>* {
@@ -119,17 +118,15 @@ main article.item p {
 }
 
 /*La imagen del artículo aparece en primer lugar*/
-main article.item picture img{
-	order:1;
+main article.item picture img {
+	order: 1;
 }
 
 /*Las imágenes de los articulos tienen una anchura relativa*/
-main article.item picture img{
-	
-}
+main article.item picture img {}
 
 /*El precio va en tercera posición*/
-main article.item span{
+main article.item span {
 	order: 3;
 }
 
@@ -148,10 +145,11 @@ main>article.item>input:hover {
 }
 
 /*Hacemos el pie flexible*/
-footer{
+footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 10px;
 	background-color: lightgray;
 }
 
@@ -161,10 +159,10 @@ footer>nav#menu-social-adicional {
 	flex-direction: column;
 	align-items: center;
 	/*lo colocamos en primer lugar dentro del pie*/
-	order:1;
+	order: 1;
 }
 
-footer>nav#menu-social-adicional ul{
+footer>nav#menu-social-adicional ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -172,14 +170,14 @@ footer>nav#menu-social-adicional ul{
 
 
 /*El menú adicional es flexible y va en segunda posición*/
-footer nav:nth-child(3){
+footer nav:nth-child(3) {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	order:2;
+	order: 2;
 }
 
-footer nav:nth-child(3) ul#menu-adicional{
+footer nav:nth-child(3) ul#menu-adicional {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -192,11 +190,42 @@ footer>nav#menu-social-adicional>ul>li i {
 }
 
 /*El texto del pie va al final*/
-footer > small{
+footer>small {
 	order: 3;
 }
 
 /*VERSIÓN DE ESCRITORIO*/
 /*En la cabecera va logo e iconos en la misma línea y debajo el menú*/
+@media(min-width:1200px) {
+	
+
+	header nav#menu-principal {
+		flex: 100%;
+		order:5;
+	}
+
+	header nav#menu-principal ul#menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+	}
+
+	header nav#menu-principal ul#menu li {
+		padding: 10px;
+	}
+
+	header nav#menu-principal label,
+	input {
+		display: none;
+	}
+
+	header a#logo {
+		align-self: left;
+		order:1;
+		flex:50%;
+	}
+}
+
 /*Hay 4 artículos por fila*/
 /*La barra social y el menú adicional están uno al lado del otro*/
