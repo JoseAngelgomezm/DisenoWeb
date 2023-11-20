@@ -29,10 +29,9 @@ ul {
 header {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	/*La cabecera ocupa todo el ancho de la página*/
-	flex: 100%;
 }
 
 /*La hamburguesa la colocamos al principio*/
@@ -61,6 +60,15 @@ header>nav#menu-principal>ul#menu {
 	border-bottom: 1px solid grey;
 }
 
+header>nav#menu-principal>input:checked+ul#menu {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	left: 0;
+	top: 4rem;
+	padding-left: 1rem;
+}
+
 /*En segunda posición está el buscador*/
 header>nav#search {
 	order: 2;
@@ -75,7 +83,8 @@ header>a#logo {
 
 /*El logo de la cabecera tiene un tamaño fijo*/
 header a#logo picture img#wonder {
-	size: 200px;
+	width: 200px;
+	height: auto;
 }
 
 /*En cuarta posición está el icono del usuario de login*/
@@ -96,7 +105,6 @@ main {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-
 }
 
 /*Los artículos tienen que ser flexibles*/
@@ -104,9 +112,12 @@ main article {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	/*En la versión de móvil se muestran en filas de 2*/
+	flex: 0 50%;
+	padding: 0.5rem;
 }
 
-/*En la versión de móvil se muestran en filas de 2*/
+
 
 main>article.item>* {
 	margin-bottom: 0.5rem;
@@ -115,6 +126,7 @@ main>article.item>* {
 /*El párrafo con la descripción del artículo va en segundo lugar*/
 main article.item p {
 	order: 2;
+	text-align: center;
 }
 
 /*La imagen del artículo aparece en primer lugar*/
@@ -123,7 +135,10 @@ main article.item picture img {
 }
 
 /*Las imágenes de los articulos tienen una anchura relativa*/
-main article.item picture img {}
+main article.item picture img {
+	width: 100%;
+	height: auto;
+}
 
 /*El precio va en tercera posición*/
 main article.item span {
@@ -149,7 +164,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 10px;
+	padding: 0.5rem;
 	background-color: lightgray;
 }
 
@@ -195,15 +210,24 @@ footer>small {
 }
 
 /*VERSIÓN DE ESCRITORIO*/
-/*En la cabecera va logo e iconos en la misma línea y debajo el menú*/
 @media(min-width:1200px) {
-	
+
+	/*En la cabecera va logo e iconos en la misma línea y debajo el menú*/
+	header {
+		flex-wrap: wrap;
+	}
+
+	/*Hay 4 artículos por fila*/
+	main>article.item {
+		flex: 0 25%;
+	}
 
 	header nav#menu-principal {
 		flex: 100%;
-		order:5;
+		order: 5;
 	}
 
+	/*La barra social y el menú adicional están uno al lado del otro*/
 	header nav#menu-principal ul#menu {
 		display: flex;
 		flex-direction: row;
@@ -211,10 +235,33 @@ footer>small {
 
 	}
 
+	header>nav#search {
+		order: 2;
+		flex-basis: 5%;
+	}
+
 	header nav#menu-principal ul#menu li {
 		padding: 10px;
 	}
 
+	header>a#logo {
+		order: 1;
+		font-size: 1.4rem;
+		flex: 20%;
+	}
+
+	header>nav#login {
+		order: 3;
+		font-size: 1.4rem;
+		flex-basis: 5%;
+	}
+
+	header>nav#bag {
+		order: 4;
+		flex-basis: 5%;
+	}
+
+	/*Ocultamos el icono de menú*/
 	header nav#menu-principal label,
 	input {
 		display: none;
@@ -222,10 +269,7 @@ footer>small {
 
 	header a#logo {
 		align-self: left;
-		order:1;
-		flex:50%;
+		order: 1;
+		flex: 50%;
 	}
 }
-
-/*Hay 4 artículos por fila*/
-/*La barra social y el menú adicional están uno al lado del otro*/
