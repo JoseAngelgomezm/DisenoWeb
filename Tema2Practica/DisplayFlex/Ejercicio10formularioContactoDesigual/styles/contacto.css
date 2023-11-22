@@ -35,6 +35,7 @@ div#contenido header {
 div#contenido header picture img {
     width: 100%;
     height: auto;
+    max-width: 300px;
 }
 
 div#contenido header picture {
