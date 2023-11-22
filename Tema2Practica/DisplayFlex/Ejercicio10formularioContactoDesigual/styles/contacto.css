@@ -4,9 +4,10 @@
 
 /* etiquetas globales */
 
-body{
+body {
     font-size: 16px;
 }
+
 ul {
     list-style: none;
 }
@@ -16,42 +17,123 @@ a {
     color: black;
 }
 
-div#contenido{
+div#contenido {
     display: flex;
     flex-direction: column;
 }
 
-/* HEADER*/
+/* HEADER */
 
 div#contenido header {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-div#contenido header picture img{
-    border: solid 1px;
+/* Logo */
+div#contenido header picture img {
     width: 100%;
     height: auto;
 }
 
-div#contenido header picture{
+div#contenido header picture {
     flex: 0 50%;
 }
 
-div#contenido header nav#bloque-iconos ul{
+/* Bloque Iconos */
+div#contenido header nav#bloque-iconos {
+    flex: 0 50%;
+}
+
+div#contenido header nav#bloque-iconos ul {
     display: flex;
     flex-direction: row;
-    border: solid 1px;
+    justify-content: flex-end;
     width: 100%;
 }
 
-div#contenido header nav#bloque-iconos ul li{
-    flex: 0 25%;
+div#contenido header nav#bloque-iconos ul li {
+    font-size: 3rem;
+    padding-left: 2rem;
 }
 
-
-div#contenido header nav#menu-principal ul{
-    display:none;
+/* Menu principal */
+div#contenido header nav#menu-principal {
+    flex: 0 100%;
 }
 
+div#contenido header nav#menu-principal div#hamburguesa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
 
+div#contenido header nav#menu-principal div#hamburguesa span {
+    color: white;
+    font-size: 2rem;
+}
 
+div#contenido header nav#menu-principal ul {
+    display: none;
+}
+
+/* main */
+
+/* section form-contacto */
+div#contenido main section#form-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* form contacto */
+div#contenido main section#form-contacto form#contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#contenido main section#form-contacto form#contacto input,
+select {
+    font-weight: bold;
+    width: 100%;
+    margin: 0.5rem;
+    height: 3vh;
+    border-radius: 0.3rem;
+}
+
+div#contenido main section#form-contacto form#contacto select {
+    background-color: lightgray;
+}
+
+div#contenido main section#form-contacto form#contacto input:focus {
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+
+div#contenido main section#form-contacto form#contacto textarea {
+    resize: none;
+}
+
+div#contenido main section#form-contacto form#contacto span#caracteres {
+    align-self: flex-start;
+    color: gray;
+}
+
+div#contenido main section#form-contacto form#contacto input[type="button"] {
+    background-color: black;
+    color: white;
+}
+
+div#contenido main section#form-contacto form#contacto label {
+    display: none;
+}
+
+div#contenido footer {
+    display: none;
+}
