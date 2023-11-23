@@ -11,23 +11,23 @@ nav ul {
     list-style: none;
     display: flex;
     flex-direction: row;
+    flex: 0 100%;
 }
 
 nav ul li {
     margin-left: 1rem;
     padding: 0.2rem;
     border-right: solid 1px gray;
+    text-decoration: underline wavy gray;
 }
 
 nav ul li a {
     text-decoration: none;
-    text-decoration-style: wavy;
     color: blue;
     padding:0.2rem;
 }
 
 nav ul li#login{
     border:none;
-    justify-self: flex-end;
-    align-self: flex-end;
+    margin-left:auto;
 }
