@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 a {
@@ -51,21 +53,63 @@ div#contenido nav:nth-child(4) {
 
 /* main */
 
-div#contenido>main {
+
+div#contenido>main>section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-div#contenido>main>section {
-    display: flex;
-    border:solid 1px;
-}
-
 div#contenido>main>section>article {
+    position:relative;
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding: 1rem;
+    flex: 0 50%;
+}
+
+div#contenido>main>section>article span {
+    position: absolute;
+    background-color: rgb(36, 35, 35);
+    color: white;
+    padding: 0.3rem 1.5rem;
+    max-width: 200px;
+    z-index: 1;
+    right: 20px;
+    top: 50px;
+}
+
+div#contenido>main>section>article>.hearth{
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    max-width: 40px;
+    background-color: white;
+    border-radius: 5rem;
+}
+
+div#contenido>main>section>article>.bag{
+    position: absolute;
+    top: 120px;
+    left: 40px;
+    max-width: 40px;
+    background-color: white;
+    border-radius: 5rem;
+}
+
+div#contenido>main>section>article>.hearth:hover ,
+div#contenido>main>section>article>.bag:hover {
+    cursor: pointer;
+}
+
+div#contenido>main>section>article p:nth-child(7) {
+    font-weight: bold;
+}
+
+div#contenido>main>section>article * {
+    margin: 0;
+    padding: 0.3rem;
 }
 
 #contenido>main>section>article>img {
@@ -73,15 +117,13 @@ div#contenido>main>section>article {
     height: auto;
 }
 
+
 /* FOOTER */
 div#contenido>footer {
     display: flex;
     flex-direction: column;
-    background-color: #dfdace
-}
-
-div#contenido>footer>nav#logos {
-    display: flex;
+    background-color: #dfdace;
+    
 }
 
 div#contenido>footer>nav#logos>ul {
@@ -98,18 +140,25 @@ div#contenido>footer>nav#logos>ul>li {
 div#contenido>footer>nav#enlaces {
     display: flex;
     flex-direction: column;
+    text-align: start;
 }
 
 div#contenido>footer>nav#enlaces>h4 {
-    margin-left: 3rem;
+    margin-left: 2.5rem;
 }
 
+
 div#contenido>footer>nav#enlaces>ul {
+    display: flex;
+    flex-direction: column;
     list-style: none;
+    
 }
 
 div#contenido>footer>nav#enlaces>ul>li {
     border-bottom: 1px solid black;
     margin-right: 2.5rem;
-    padding: 0.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    
 }
