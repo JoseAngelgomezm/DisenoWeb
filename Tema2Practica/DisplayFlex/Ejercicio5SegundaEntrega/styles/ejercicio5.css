@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'San Serif';
+    font-weight: bold;
+}
+
+/* formulario */
+form#form-login {
+    display: flex;
+    flex-flow: column;
+}
+
+form#form-login>div#sexo {
+    display: flex;
+}
+
+form#form-login * {
+    border: none;
+}
+
+form#form-login *::placeholder,
+select {
+    color: black;
+    font-weight: bold;
+}
+
+form#form-login input {
+    border-bottom: solid 1px gray;
+    padding: 0.8rem;
+}
+
+form#form-login select {
+    padding: 0.8rem;
+}
+
+form#form-login>* {
+    margin-top: 2rem;
+}
+
+form#form-login button {
+    width: 10rem;
+    height: 4rem;
+    border-radius: 2rem;
+    background-color: black;
+    color: rgb(165, 126, 42);
+    font-weight: bold;
+}
+
+form#form-login>div#autorizaciones {
+    display: flex;
+    flex-direction: row;
+    flex: 0 100%;
+}
+
+
+@media(min-width:720px) {
+    form#form-login {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    form#form-login>div#sexo,
+    form#form-login>input#ciudad,
+    form#form-login>select#pais,
+    form#form-login>select#provincia,
+    form#form-login>input#telefono,
+    form#form-login>h3,
+    form#form-login>label#autorizar
+    {
+        flex: 0 96%;
+    }
+
+    form#form-login>input#nombre,
+    form#form-login>input#apellidos,
+    form#form-login>input#email,
+    form#form-login>input#contrasena,
+    form#form-login>input#fecha,
+    form#form-login>input#dni,
+    form#form-login>input#direccion,
+    form#form-login>input#codigop{
+        flex: 0 47%;
+    }
+
+    form#form-login>input#apellidos,
+    form#form-login>input#contrasena,
+    form#form-login>input#dni,
+    form#form-login>input#codigop{
+        margin-left: 2rem;
+    }
+
+    
+
+
+}
