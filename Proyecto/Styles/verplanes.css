@@ -1,53 +1,144 @@
-*{box-sizing: border-box;}
-
-header{
-    background-color: black;
+* {
+    box-sizing: border-box;
+    font-family: krona One;
 }
 
-main>h2{
-    background-color: gray;
-    text-align: center;
-    border-bottom: solid 1px black;
+div#contenido {
+    display: flex;
+    flex-direction: column;
 }
 
-main section{
+/* cabecera */
+
+div#contenido header nav#hamburguer ul,
+div#contenido header nav#hamburguer input {
+    display: none;
+}
+
+div#contenido header {
+    display: flex;
+    flex-direction: row;
     background-color: black;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    margin: 10px;
+    flex: 0 100%;
+    align-items: center;
+    justify-content: space-between;
 }
 
-main section ul{
-    color:white;
+div#contenido header nav#hamburguer{
+    display: flex;
+    flex-direction: column;
+    position:relative;
 }
 
-main section h2{
-    color:red
+div#contenido header nav#hamburguer label:hover {
+    cursor: pointer;
 }
 
-a{
-    text-decoration: none;
+div#contenido header nav#hamburguer input:checked+ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
     background-color: black;
-    padding:0.5em;
-    color:white;
+    list-style: none;
+    border: solid 1px red;
+    z-index: 1;
 }
 
-footer{
+div#contenido header nav#hamburguer ul li {
+    color: #FFFFFF;
+    padding: 2rem;
+}
+
+/* MAIN */
+
+div#contenido main>h2 {
+    background-color: #D7D7D8;
+    text-align: center;
+    margin-top: 0;
+    padding: 1.5rem;
+    border-bottom: 2px solid black;
+}
+
+div#contenido section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+div#contenido article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+div#contenido article div#izquierda {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 18px;
+}
+
+div#contenido article div#izquierda h2 {
+    color: red;
+}
+
+div#contenido article div#izquierda ul li {
+    color: white;
+    padding: 0.5rem;
+    padding-right: 1.5rem;
+}
+
+div#contenido article div#derecha {
+    display: flex;
+    flex-direction: column;
+    border-radius: 18px;
+    position: relative;
+}
+
+div#contenido article div#derecha span {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    color: red;
+}
+
+div#contenido article a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    flex: 0 50%;
+    border-radius: 0.5rem;
+    padding: .4rem;
+    margin-top: 2rem
+}
+
+/* FIN CONTENIDO MAIN */
+
+
+/* FOOTER */
+div#contenido footer {
     background-color: black;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-footer span{
+div#contenido footer span {
     margin: 5px 0;
-    color:white;
+    color: white;
 }
 
-footer a{
+div#contenido footer a {
     margin: 5px 0;
     text-decoration: none;
     color: white;
-    text-decoration:underline;
+    text-decoration: underline;
 }
+
+/* FIN FOOTER */
