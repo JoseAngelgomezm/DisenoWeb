@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: deepskyblue;
+}
+
+ul{
+    display: none;
+}
+
+input#hamburguer-icon{
+    display: none;
+}
+
+label{
+    display: flex;
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    background-color: darkslategrey;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+label span.hamburguer-line{
+    position:absolute;
+    width: 4rem;
+    height: .4rem;
+    background: white;
+    transition: 1s;
+}
+
+label span:nth-child(1){
+    top: 1.33rem;
+    left: 1rem;
+}
+
+label span:nth-child(2){
+    top: 2.66rem;
+    left: 1rem;
+}
+
+label span:nth-child(3){
+    top: 3.99rem;
+    left: 1rem;
+}
+
+input#hamburguer-icon:checked ~ nav#menu ul{
+    display: flex;
+    flex-direction: column;
+    background-color:  darkslategrey;
+    width: 30%;
+    transition: 1s;
+}
+
+input#hamburguer-icon:checked ~ nav#menu ul li{
+   color: white;
+   padding: 1rem;
+   border-top: solid 1px white
+}
+
+input#hamburguer-icon:checked ~ nav#menu ul li:nth-child(1){
+    margin-top: 6rem;
+}
+
+input#hamburguer-icon:checked ~ nav#menu ul li:nth-child(5){
+    border-bottom: solid 1px white
+}
+
+
+
+
+
+
+

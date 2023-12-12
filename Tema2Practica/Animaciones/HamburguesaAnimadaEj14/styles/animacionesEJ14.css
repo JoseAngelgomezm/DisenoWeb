@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+
+label input#hamburguer-icon{
+    display: none;
+}
+
+label{
+    display: inline-block;
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    background-color: aqua;
+    cursor: pointer;
+}
+
+label span.hamburguer-line{
+    position:absolute;
+    width: 4rem;
+    height: .4rem;
+    background: white;
+    transition: 1s;
+}
+
+label span:nth-child(2){
+    top: 1.33rem;
+    left: 1rem;
+}
+
+label span:nth-child(3){
+    top: 2.66rem;
+    left: 1rem;
+}
+
+label span:nth-child(4){
+    top: 3.99rem;
+    left: 1rem;
+}
+
+label input#hamburguer-icon:checked ~ span.hamburguer-line:nth-child(2){
+    transition: 1s;
+    transform: rotate(-45deg);
+    top: 3rem;
+}
+
+label input#hamburguer-icon:checked ~ span.hamburguer-line:nth-child(3){
+    transition: 1s;
+    background: none;
+}
+
+label input#hamburguer-icon:checked ~ span.hamburguer-line:nth-child(4){
+    transition: 1s;
+    transform: rotate(+45deg);
+    top: 3rem;
+}
+
+
+
+
+
