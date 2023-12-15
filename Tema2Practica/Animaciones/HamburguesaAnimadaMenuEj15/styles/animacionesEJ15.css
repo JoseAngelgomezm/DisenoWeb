@@ -3,71 +3,78 @@
 }
 
 body{
-    background-color: deepskyblue;
+    background-color: rgb(146, 241, 253);
+    padding: 0;
+    margin: 0;
 }
 
-ul{
-    display: none;
+nav#menu{
+    position: absolute;
+    left: -50%;
+    transition: left 1s 0s;
+}
+
+div#contenido{
+    display: flex;
+    flex-direction: row;
 }
 
 input#hamburguer-icon{
     display: none;
 }
 
-label{
+div#contenido label{
     display: flex;
-    position: relative;
+    flex-direction: column;
     width: 6rem;
     height: 6rem;
     background-color: darkslategrey;
     border-radius: .5rem;
     cursor: pointer;
+    margin-top: 1rem;
+    align-items: center;
+    transition: margin-left 1s ease;
 }
 
-label span.hamburguer-line{
-    position:absolute;
+
+div#contenido label span.hamburguer-line{
     width: 4rem;
     height: .4rem;
     background: white;
-    transition: 1s;
+    margin-top: 1.2rem;
 }
 
-label span:nth-child(1){
-    top: 1.33rem;
-    left: 1rem;
-}
 
-label span:nth-child(2){
-    top: 2.66rem;
-    left: 1rem;
-}
-
-label span:nth-child(3){
-    top: 3.99rem;
-    left: 1rem;
-}
-
-input#hamburguer-icon:checked ~ nav#menu ul{
-    display: flex;
+div#contenido input#hamburguer-icon:checked ~ nav#menu {
+    width: 50%;
     flex-direction: column;
-    background-color:  darkslategrey;
-    width: 30%;
-    transition: 1s;
+    left: 0%;
+    background-color: darkslategrey;
+    height: 100vh;
 }
 
-input#hamburguer-icon:checked ~ nav#menu ul li{
-   color: white;
-   padding: 1rem;
-   border-top: solid 1px white
+div#contenido input#hamburguer-icon:checked ~ nav#menu ul {
+    list-style:none;
+    padding: 0;
 }
 
-input#hamburguer-icon:checked ~ nav#menu ul li:nth-child(1){
-    margin-top: 6rem;
+div#contenido input#hamburguer-icon:checked ~ label {
+    margin-left:50%;
 }
 
-input#hamburguer-icon:checked ~ nav#menu ul li:nth-child(5){
-    border-bottom: solid 1px white
+div#contenido nav#menu ul li{
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    border-bottom: solid 1px white;
+    font-size:x-large;
 }
+
+div#contenido nav#menu ul li:nth-child(1){
+    margin-top: 7rem;
+    border-top: 1px solid white
+}
+
 
 
 
