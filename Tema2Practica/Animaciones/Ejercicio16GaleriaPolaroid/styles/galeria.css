@@ -37,12 +37,14 @@ ul{
 ul li{
     display: flex;
     flex-direction: column;
-    text-align: center;
     flex: 0 16%;
     background-color: white;
 }
 
 ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: .5rem .5rem 1rem .5rem;
     text-decoration: none;
 }
