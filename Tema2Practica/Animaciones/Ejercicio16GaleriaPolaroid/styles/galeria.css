@@ -10,6 +10,7 @@ img{
     transition: transform 1s 0s;
     width: 100%;
     height: auto;
+    margin-bottom: 1rem;
 }
 
 div ul li:nth-child(even){
@@ -30,17 +31,25 @@ ul{
     align-items: center;
     justify-content: center;
     gap: 3rem;
+    padding: 1rem;
 }
 
 ul li{
     display: flex;
     flex-direction: column;
+    text-align: center;
     flex: 0 16%;
     background-color: white;
 }
 
 ul li a{
-    padding: .5rem .5rem 2rem .5rem;
+    padding: .5rem .5rem 1rem .5rem;
+    text-decoration: none;
+}
+
+ul li a[title]::after{
+    content: attr(title);
+    color: black;
 }
 
 div ul li:nth-child(even):hover{
